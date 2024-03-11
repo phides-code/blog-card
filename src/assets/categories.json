@@ -2,5 +2,54 @@
     {
         "category_name": "technology",
         "color": "#F97316"
+    },
+    {
+        "category_name": "science",
+        "color": "#3498db"
+    },
+
+    {
+        "category_name": "health",
+        "color": "#27ae60"
+    },
+
+    {
+        "category_name": "travel",
+        "color": "#9b59b6"
+    },
+
+    {
+        "category_name": "food",
+        "color": "#e74c3c"
+    },
+
+    {
+        "category_name": "fashion",
+        "color": "#f39c12"
+    },
+
+    {
+        "category_name": "sports",
+        "color": "#1abc9c"
+    },
+
+    {
+        "category_name": "music",
+        "color": "#c0392b"
+    },
+
+    {
+        "category_name": "art",
+        "color": "#8e44ad"
+    },
+
+    {
+        "category_name": "books",
+        "color": "#2c3e50"
+    },
+
+    {
+        "category_name": "business",
+        "color": "#f1c40f"
     }
 ]

@@ -1,18 +1,32 @@
 import styled from 'styled-components';
 import { DisplaybleBlogPost } from './types';
 import TrimmedContent from './TrimmedContent';
+import moment from 'moment';
 
 interface CardProps {
     blogPost: DisplaybleBlogPost;
 }
 
+const formatTimeAgo = (epochTime: number) => {
+    return moment(epochTime).fromNow();
+};
+
 const Card = ({ blogPost }: CardProps) => {
+    const getRandomNumber = () => Math.floor(Math.random() * 5);
+
+    const coverImage =
+        blogPost.cover_image_source !== ''
+            ? blogPost.cover_image_source
+            : 'banner-' + getRandomNumber() + '.png';
+
+    const authorAvatar =
+        blogPost.author_avatar_source !== ''
+            ? blogPost.author_avatar_source
+            : 'headshot-' + getRandomNumber() + '.png';
+
     return (
         <Wrapper>
-            <CoverImage
-                src={blogPost.cover_image_source}
-                alt={blogPost.title}
-            />
+            <CoverImage src={coverImage} alt={blogPost.title} />
             <PostInfoContainer>
                 <Category style={{ backgroundColor: blogPost.category_color }}>
                     {blogPost.category.toUpperCase()}
@@ -20,11 +34,13 @@ const Card = ({ blogPost }: CardProps) => {
                 <Title>{blogPost.title}</Title>
                 <TrimmedContent content={blogPost.content} />
                 <AuthorInfoContainer>
-                    <AuthorAvatar src={blogPost.author_avatar_source} />
-                    <NameAndTimeStampContainer>
+                    <AuthorAvatar src={authorAvatar} />
+                    <NameAndTimestampContainer>
                         <AuthorName>{blogPost.author_name}</AuthorName>
-                        <Timestamp>{blogPost.timestamp}</Timestamp>
-                    </NameAndTimeStampContainer>
+                        <Timestamp>
+                            {formatTimeAgo(blogPost.timestamp)}
+                        </Timestamp>
+                    </NameAndTimestampContainer>
                 </AuthorInfoContainer>
             </PostInfoContainer>
         </Wrapper>
@@ -34,6 +50,8 @@ const Card = ({ blogPost }: CardProps) => {
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    min-width: 18rem;
     max-width: 27.813rem;
     border-radius: 10px;
     background-color: white;
@@ -41,7 +59,8 @@ const Wrapper = styled.div`
 `;
 
 const CoverImage = styled.img`
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
+    max-height: 21.526rem;
     max-width: 100%;
 `;
 
@@ -75,10 +94,12 @@ const AuthorAvatar = styled.img`
     margin: 0 0.8rem 0 0;
 `;
 
-const NameAndTimeStampContainer = styled.div``;
+const NameAndTimestampContainer = styled.div``;
 const AuthorName = styled.div`
     font-weight: bold;
 `;
-const Timestamp = styled.div``;
+const Timestamp = styled.div`
+    color: gray;
+`;
 
 export default Card;

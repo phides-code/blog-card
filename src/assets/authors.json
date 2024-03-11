@@ -3,5 +3,50 @@
         "id": "1",
         "name": "Corey Lubin",
         "avatar_source": "/corey.png"
+    },
+    {
+        "id": "2",
+        "name": "Sophia Patel",
+        "avatar_source": ""
+    },
+    {
+        "id": "3",
+        "name": "Diego Sanchez",
+        "avatar_source": ""
+    },
+    {
+        "id": "4",
+        "name": "Olivia Mueller",
+        "avatar_source": ""
+    },
+    {
+        "id": "5",
+        "name": "Alessia Rossi",
+        "avatar_source": ""
+    },
+    {
+        "id": "6",
+        "name": "Kai Nguyen",
+        "avatar_source": ""
+    },
+    {
+        "id": "7",
+        "name": "Malik Khan",
+        "avatar_source": ""
+    },
+    {
+        "id": "8",
+        "name": "Jasmine Alves",
+        "avatar_source": ""
+    },
+    {
+        "id": "9",
+        "name": "Liam O'Malley",
+        "avatar_source": ""
+    },
+    {
+        "id": "10",
+        "name": "Sofia Mendez",
+        "avatar_source": ""
     }
 ]

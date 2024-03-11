@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import Card from './Card';
 import { getAllBlogPosts, getAuthorById, getCategoryByName } from './service';
 import { BlogPost, DisplaybleBlogPost } from './types';
@@ -5,7 +6,7 @@ import { BlogPost, DisplaybleBlogPost } from './types';
 const BlogPostList = () => {
     const blogPosts: BlogPost[] = getAllBlogPosts();
     return (
-        <div>
+        <Wrapper>
             {blogPosts.map((blogPost) => {
                 const author = getAuthorById(blogPost.author_id);
                 const category = getCategoryByName(blogPost.category);
@@ -19,8 +20,13 @@ const BlogPostList = () => {
                     <Card key={blogPost.id} blogPost={displayableBlogPost} />
                 );
             })}
-        </div>
+        </Wrapper>
     );
 };
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
 
 export default BlogPostList;

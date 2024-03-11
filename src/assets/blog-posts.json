@@ -5,7 +5,43 @@
         "title": "How I Built a Web Development Challenges Website",
         "content": "If you're looking for inspiration to build your own side project, let me share my journey of creating a web development challenges website. It all started with a passion for coding and a desire to create a platform where developers could hone their skills in a fun and engaging way. As a developer myself, I often found that traditional tutorials and courses lacked the hands-on, practical experience that is crucial for growth. This gap in resources led me to brainstorm the idea of a website that would offer a variety of coding challenges, ranging from beginner to advanced levels.",
         "author_id": "1",
-        "timestamp": 1710085557,
+        "timestamp": 1704984706000,
         "cover_image_source": "/web-dev.jpeg"
+    },
+    {
+        "id": "2",
+        "category": "science",
+        "title": "Exploring the Mysteries of Quantum Physics",
+        "content": "Quantum physics is a fascinating field that challenges our understanding of the universe at the smallest scales. In this blog post, we'll delve into the strange and mysterious world of quantum mechanics. From the famous double-slit experiment to the mind-bending concept of entanglement, quantum physics has captivated scientists and thinkers for decades.",
+        "author_id": "2",
+        "timestamp": 1704984806000,
+        "cover_image_source": ""
+    },
+    {
+        "id": "3",
+        "category": "health",
+        "title": "The Benefits of Meditation for Mind and Body",
+        "content": "Meditation is a powerful tool for improving both mental and physical health. In this post, we'll explore the numerous benefits of incorporating meditation into your daily routine. From reducing stress and anxiety to improving focus and sleep, meditation has been shown to have a profound impact on overall well-being.",
+        "author_id": "3",
+        "timestamp": 1704984906000,
+        "cover_image_source": ""
+    },
+    {
+        "id": "4",
+        "category": "travel",
+        "title": "A Guide to Backpacking Through Southeast Asia",
+        "content": "Embark on an adventure of a lifetime with our guide to backpacking through Southeast Asia. From the bustling streets of Bangkok to the serene beaches of Bali, this region offers a diverse range of experiences for every type of traveler. Discover hidden gems, sample delicious street food, and immerse yourself in the rich cultures of countries like Thailand, Vietnam, and Cambodia.",
+        "author_id": "4",
+        "timestamp": 1704985006000,
+        "cover_image_source": ""
+    },
+    {
+        "id": "5",
+        "category": "food",
+        "title": "The Art of Baking the Perfect Sourdough Bread",
+        "content": "Join us on a culinary journey as we explore the art of baking the perfect sourdough bread. From creating and maintaining a starter to mastering the technique of fermentation, we'll guide you through each step of the process. There's nothing quite like the satisfaction of pulling a freshly baked loaf of sourdough from your own oven!",
+        "author_id": "5",
+        "timestamp": 1704985106000,
+        "cover_image_source": ""
     }
 ]
