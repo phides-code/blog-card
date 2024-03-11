@@ -1,0 +1,11 @@
+[
+    {
+        "id": "1",
+        "category": "technology",
+        "title": "How I Built a Web Development Challenges Website",
+        "content": "If you're looking for inspiration to build your own side project, let me share my journey of creating a web development challenges website. It all started with a passion for coding and a desire to create a platform where developers could hone their skills in a fun and engaging way. As a developer myself, I often found that traditional tutorials and courses lacked the hands-on, practical experience that is crucial for growth. This gap in resources led me to brainstorm the idea of a website that would offer a variety of coding challenges, ranging from beginner to advanced levels.",
+        "author_id": "1",
+        "timestamp": 1710085557,
+        "cover_image_source": "/web-dev.jpeg"
+    }
+]

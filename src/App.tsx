@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Card from './Card';
+import { BackgroundColor } from './theme';
+import BlogPostList from './BlogPostList';
 
 const App = () => {
     const [isMobile, setisMobile] = useState<boolean>(false);
@@ -25,9 +26,11 @@ const App = () => {
         };
     }, []);
 
+    console.log(isMobile ? 'mobile' : 'desktop');
+
     return (
         <Wrapper>
-            <Card isMobile={isMobile} />
+            <BlogPostList />
         </Wrapper>
     );
 };
@@ -38,6 +41,7 @@ const Wrapper = styled.div`
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    background-color: ${BackgroundColor};
 `;
 
 export default App;
